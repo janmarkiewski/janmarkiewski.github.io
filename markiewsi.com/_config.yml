@@ -1,7 +1,7 @@
 # Site settings
 title: markiewski.com
 description: A description of my personal website.
-baseurl: "/markiewski.com" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://janmarkiewski.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
