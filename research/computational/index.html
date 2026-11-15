@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Computational Research | Jan Markiewski</title>
+<meta name="description" content="Jan Markiewski’s computational research in R: differential expression with DESeq2, single-cell analysis with Seurat, pathway enrichment with GSEA and fgsea, and transcription-factor activity inference with VIPER and DoRothEA.">
+<link rel="canonical" href="https://www.markiewski.com/research/computational/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.markiewski.com/research/computational/">
+<meta property="og:title" content="Computational Research | Jan Markiewski">
+<meta property="og:description" content="Jan Markiewski’s computational research in R: differential expression with DESeq2, single-cell analysis with Seurat, pathway enrichment with GSEA and fgsea, and transcription-factor activity inference with VIPER and DoRothEA.">
+<meta property="og:site_name" content="Jan Markiewski">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Computational Research | Jan Markiewski">
+<meta name="twitter:description" content="Jan Markiewski’s computational research in R: differential expression with DESeq2, single-cell analysis with Seurat, pathway enrichment with GSEA and fgsea, and transcription-factor activity inference with VIPER and DoRothEA.">
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://www.markiewski.com/research/computational/#webpage",
+   "url": "https://www.markiewski.com/research/computational/",
+   "name": "Computational Research | Jan Markiewski",
+   "description": "Jan Markiewski’s computational research in R: differential expression with DESeq2, single-cell analysis with Seurat, pathway enrichment with GSEA and fgsea, and transcription-factor activity inference with VIPER and DoRothEA.",
+   "isPartOf": {
+    "@id": "https://www.markiewski.com/#website"
+   },
+   "about": {
+    "@id": "https://www.markiewski.com/#jan-markiewski"
+   },
+   "mainEntity": {
+    "@id": "https://www.markiewski.com/research/computational/#main"
+   },
+   "breadcrumb": {
+    "@id": "https://www.markiewski.com/research/computational/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://www.markiewski.com/research/computational/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Jan Markiewski",
+     "item": "https://www.markiewski.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Computational Research",
+     "item": "https://www.markiewski.com/research/computational/"
+    }
+   ]
+  },
+  {
+   "@id": "https://www.markiewski.com/research/computational/#main",
+   "@type": "CreativeWork",
+   "name": "Computational Research",
+   "author": {
+    "@id": "https://www.markiewski.com/#jan-markiewski"
+   },
+   "about": [
+    "single-cell RNA sequencing",
+    "differential gene expression",
+    "gene set enrichment analysis"
+   ]
+  }
+ ]
+}</script>
+<link rel="stylesheet" href="../../assets/pages.css">
+</head>
+<body>
+<div class="frame">
+<main>
+<div class="topbar">
+<a class="clink" href="../../" style="--r:-135deg;display:flex;align-items:center;gap:5px;color:#111;font-weight:300;text-decoration:none;white-space:nowrap;"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:block;flex:0 0 auto;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg><span class="ul">jan markiewski</span></a>
+<div class="links">
+<a class="clink" href="https://www.linkedin.com/in/jan-markiewski/" target="_blank" rel="noopener" style="--r:45deg;display:flex;align-items:center;gap:5px;color:#111;font-weight:300;text-decoration:none;white-space:nowrap;"><span class="ul">linkedin</span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:block;flex:0 0 auto;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+<a class="clink" href="https://orcid.org/0009-0005-3898-4097" target="_blank" rel="noopener" style="--r:90deg;display:flex;align-items:center;gap:5px;color:#111;font-weight:300;text-decoration:none;white-space:nowrap;"><span class="ul">orcid</span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:block;flex:0 0 auto;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+<a class="clink" href="https://scholar.google.com/citations?user=lCN73VwAAAAJ&amp;hl=en" target="_blank" rel="noopener" style="--r:135deg;display:flex;align-items:center;gap:5px;color:#111;font-weight:300;text-decoration:none;white-space:nowrap;"><span class="ul">google scholar</span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:block;flex:0 0 auto;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+<a class="clink" href="tel:+013253387686" style="--r:180deg;display:flex;align-items:center;gap:5px;color:#111;font-weight:300;text-decoration:none;white-space:nowrap;"><span class="ul">phone</span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:block;flex:0 0 auto;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+<a class="clink" href="mailto:jmarkie1@bidmc.harvard.edu" style="--r:225deg;display:flex;align-items:center;gap:5px;color:#111;font-weight:300;text-decoration:none;white-space:nowrap;"><span class="ul">email</span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:block;flex:0 0 auto;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+</div>
+</div>
+<h1 class="title">Computational Research</h1>
+<div class="rows"><div>06.2026–08.2026</div><div>laboratory Vassiliki A. Boussiotis, M.D., Ph.D. professor of medicine</div></div>
+<div class="termtext"><p style="margin: 0; font-weight: 300">most of my lab work happens at the bench, but a meaningful fraction of it never touches a pipette. across four independent pipelines, over 11,000 lines of R, i've built the computational side of this research: differential expression analysis with DESeq2, single-cell clustering and annotation with Seurat, pathway enrichment through GSEA and fgsea, and transcription-factor activity inference with VIPER and DoRothEA.</p>
+<p style="margin: 0; font-weight: 300"><span style="background:#cfeae4;box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:1px 3px;">performed differential expression analysis using DESeq2 to identify significantly up- and down-regulated genes from raw count matrices. conducted single-cell clustering, annotation, and trajectory analysis using Seurat. ran gene set enrichment analysis (GSEA/fgsea) against curated pathway databases to interpret differential expression results at the pathway level. inferred transcription-factor activity using VIPER and the DoRothEA regulon database. the analysis shown below reanalyzes public single-cell RNA-seq data from a BRAF<sup style="font-size:.7em;line-height:0;">V600E</sup> melanoma model (NCBI GEO: GSE162467).</span></p></div>
+<div class="codehead">GSE162467_complete_analysis.R</div>
+<pre class="code">set.seed(42)
+vcl &lt;- RunUMAP(vcl, dims = 1:n_pcs, verbose = FALSE)
+
+immgen_ref &lt;- celldex::ImmGenData()
+singler_results &lt;- SingleR(
+  test      = GetAssayData(vcl, assay = "SCT",
+                           layer = "data"),
+  ref       = immgen_ref,
+  labels    = immgen_ref$label.main,
+  de.method = "wilcox"
+)
+vcl$SingleR_main &lt;- singler_results$labels
+
+p_f1a &lt;- DimPlot(vcl, group.by = "SingleR_main",
+                 label = TRUE, repel = TRUE)
+p_f1b &lt;- DimPlot(vcl, group.by = "seurat_clusters",
+                 label = TRUE, repel = TRUE)
+ggsave(here::here("figures", "F1_VCL_UMAP_CellTypes.pdf"),
+       p_f1a | p_f1b, width = 14, height = 6)</pre>
+<div class="figs c2 contain">
+<figure><a href="../../assets/seq-fig-1.jpg"><img src="../../assets/seq-fig-1.jpg" alt="single-cell map of the tumor immune compartment" loading="lazy" decoding="async"></a><figcaption>single-cell map of the tumor immune compartment</figcaption></figure>
+<figure><a href="../../assets/seq-fig-2.jpg"><img src="../../assets/seq-fig-2.jpg" alt="marker expression dot plot" loading="lazy" decoding="async"></a><figcaption>marker expression dot plot</figcaption></figure>
+<figure><a href="../../assets/seq-fig-3.jpg"><img src="../../assets/seq-fig-3.jpg" alt="macrophage and T-cell feature plots" loading="lazy" decoding="async"></a><figcaption>macrophage and T-cell feature plots</figcaption></figure>
+<figure><a href="../../assets/seq-fig-4.jpg"><img src="../../assets/seq-fig-4.jpg" alt="TAM subcluster module scores" loading="lazy" decoding="async"></a><figcaption>TAM subcluster module scores</figcaption></figure>
+</div>
+<div class="related"><div class="label">related</div>
+<a class="pubcite" href="../../research/beth-israel-deaconess-medical-center/"><div class="pubarrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:block;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div><div class="txt">Beth Israel Deaconess Medical Center — research experience</div></a>
+<a class="pubcite" href="../../posters/pd1-shp2-macrophage-sting-nf-kb/"><div class="pubarrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:block;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div><div class="txt">PD-1–SHP-2 loss couples macrophage STING signaling to NF-κB — poster</div></a>
+<a class="pubcite" href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE162467" target="_blank" rel="noopener"><div class="pubarrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:block;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div><div class="txt">NCBI GEO: GSE162467</div></a>
+</div>
+<a class="foot" href="../../" aria-label="Jan Markiewski — home"><img src="../../assets/wordmark.svg" alt="Markiewski"></a>
+</main>
+</div>
+<!-- Default Statcounter code for markiewski.com https://www.markiewski.com -->
+<script type="text/javascript">
+var sc_project=13367091; 
+var sc_invisible=1; 
+var sc_security="f2d015ea"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13367091/0/f2d015ea/1/" alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>

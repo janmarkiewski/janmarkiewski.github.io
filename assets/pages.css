@@ -1,0 +1,46 @@
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:#cfcec6;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#0b0b0b;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:#23d3bf;color:#06322b}
+a{color:#111}a:hover{color:#23d3bf}
+@keyframes iconspin{0%{transform:rotate(0) scale(1)}100%{transform:rotate(360deg) scale(1)}}
+.clink .ul{background:linear-gradient(currentColor,currentColor) right bottom/100% .5px no-repeat;padding-bottom:2px;transition:background-size .45s cubic-bezier(.6,0,.2,1)}
+.clink:hover .ul{background-size:0% .5px}
+.clink svg{transform:rotate(var(--r,0deg));transition:transform .5s cubic-bezier(.6,0,.2,1)}
+.clink:hover svg{transform:rotate(calc(var(--r,0deg) + 360deg))}
+.pubcite:hover{color:#fff !important}
+.pubcite:hover .pubarrow,.pubcite:hover .pubarrow svg{color:#23d3bf !important}
+.pubcite:hover .pubarrow svg{animation:iconspin .5s cubic-bezier(.6,0,.2,1) both}
+.frame{max-width:1140px;margin:0 auto;border:1px solid #111;background:#f1f3ea}
+.topbar{display:flex;flex-wrap:wrap;justify-content:space-between;column-gap:22px;row-gap:8px;padding:11px 18px;font-size:12.5px;border-bottom:1px solid #111}
+.topbar .links{display:flex;flex-wrap:wrap;justify-content:flex-end;column-gap:22px;row-gap:8px}
+.title{margin:0;padding:22px 24px 14px;font-size:clamp(24px,3.2vw,36px);font-weight:700;letter-spacing:-.01em;line-height:1.15;text-wrap:balance}
+.block{margin:0;padding:14px 24px;font-size:clamp(20px,2.5vw,28px);font-weight:700;letter-spacing:-.01em}
+.title .sub,.block .sub{display:block;margin-top:4px;font-size:clamp(13px,1.3vw,15px);font-weight:300;letter-spacing:0}
+.rows{display:grid;grid-template-columns:162px minmax(0,1fr);margin-left:24px}
+.rows>div{padding:8px 12px;font-size:12.5px;line-height:1.3;font-weight:500;color:#000;border-bottom:1px solid #c9cbbd}
+.rows>div:nth-child(even){border-left:1px solid #c9cbbd}
+.rows>div:nth-last-child(-n+2){border-bottom:none}
+.termtext{border-bottom:1px solid #111;padding:22px 24px;display:flex;flex-direction:column;gap:13px;font-size:12.5px;line-height:1.7;color:#1a1a1a}
+.termtext p{margin:0;font-weight:300}
+.figs{display:grid;gap:0;border-bottom:1px solid #111;margin-right:-1px}
+.figs.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.figs.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.figs figure{margin:0 0 -1px -1px;border:1px solid #111;border-top:none;background:#f1f3ea;display:flex;flex-direction:column}
+.figs figure a{display:block;flex:1;background:#fff}
+.figs img{display:block;width:100%;height:100%;object-fit:cover}
+.figs.contain img{object-fit:contain;height:auto}
+.figs.contain figure a{background:#f1f3ea}
+.figs figcaption{padding:8px 12px;font-size:11.5px;font-weight:300;line-height:1.4;border-top:1px solid #c9cbbd}
+.poster{display:block;border-top:1px solid #111;border-bottom:1px solid #111;background:#fff}
+.poster img{display:block;width:100%;height:auto}
+.code{margin:0;padding:16px 24px;overflow:auto;font-size:11px;line-height:1.6;background:#0b0b0b;color:#cfcfcf;font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;border-bottom:1px solid #111}
+.codehead{padding:8px 24px;font-size:10.5px;color:#8a8a8a;background:#0b0b0b;border-bottom:1px solid #2b2b2b;font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace}
+.related{background:#000;color:#fff}
+.related .label{padding:16px 18px;border-bottom:1px solid #2b2b2b;font-size:15px;line-height:1.4;font-weight:500}
+.related .pubcite{display:flex;align-items:stretch;text-decoration:none;color:#cfcfcf;border-bottom:1px solid #2b2b2b}
+.related .pubarrow{display:flex;align-items:center;justify-content:center;width:46px;flex:0 0 46px;border-right:1px solid #2b2b2b;color:#fff;transition:background .15s ease,color .15s ease}
+.related .txt{flex:1;min-width:0;align-self:center;padding:12px 18px;line-height:1.5;text-wrap:pretty;font-size:12px;font-style:italic}
+.foot{display:flex;align-items:center;justify-content:center;padding:60px 20px}
+.foot img{width:min(440px,72%);height:auto;display:block}
+@media (max-width:640px){.rows{grid-template-columns:110px minmax(0,1fr);margin-left:12px}.figs.c2,.figs.c3{grid-template-columns:minmax(0,1fr)}.topbar{justify-content:flex-end}}
